@@ -49,6 +49,7 @@ module handle(height, width, length){
 
 }
 
+$fn=50;
 stem_offset = 6;
 stem_height = 13;
 rim_height= 2;
@@ -67,7 +68,7 @@ union(){
 		keyed_hole(stem_dia+0.4, stem_key+0.4, stem_height);
 	}
 	//stem
-	$color([0.5, 0.5, 0.5]) difference(){
+	color([0.5, 0.5, 0.5]) difference(){
 		keyed_hole(stem_dia, stem_key, stem_height);
 		keyed_hole(7.34, 6.3, stem_height);
 	}
